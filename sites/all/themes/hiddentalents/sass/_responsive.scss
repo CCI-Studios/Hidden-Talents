@@ -1,0 +1,389 @@
+@media screen and (max-width:1090px)
+{
+	.header-inner
+	{
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width:990px)
+{
+	.header-inner
+	{
+		padding: 0px 0px;
+	}
+
+	#block-block-4,
+	#block-block-6, 
+	#block-block-5, 
+	#block-block-8	
+	{
+		display: block;
+		text-align: center;
+	}
+
+	#header
+	{	
+		padding:0 10px;
+		.fb
+		{
+			position: relative;
+			padding:20px 0px;
+			width: 100%;
+		}
+	}
+
+	#block-menu-menu-top-menu
+	{
+		width:100%;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 0px;
+	}
+
+	#block-menu-menu-top-menu ul.menu 
+	{
+		overflow: hidden;
+		float: none;
+		
+	}
+
+	#block-menu-menu-top-menu ~ .block-menu
+	{
+		padding:0px;
+	}
+
+	#block-block-9 + div.block-menu ul.menu li a
+	{
+		padding:15px 15px;
+	}
+
+	#block-menu-menu-top-menu ul.menu,
+	#header ul.menu 
+	{	
+		text-align: center;
+		li
+		{	
+			float: none;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	#block-block-3 p
+	{
+		display: block;
+		border-right: 0px;
+	}
+
+	#block-webform-client-block-2 .webform-component-textfield,
+	.block-webform .webform-component-textfield
+	{
+		float: none;
+		padding-right: 0px;
+		width: 100%;
+	}
+
+	#block-webform-client-block-2, 
+	#block-block-3, hr, .block-webform
+	{
+		padding:0 10px;
+	}
+
+	.node-type-summer-program,
+	.node-type-nightingale,
+	.node-type-off-broadway
+	{
+		.about-text,
+		.about-text p
+		{
+			padding:30px 10px;
+		}
+
+	}
+
+	.page-summer-program-photo-gallery,
+	.page-nightingale-photo-gallery,
+	.page-off-broadway-photo-gallery
+	{
+		.view-summer-gallery,
+		.view-nightingale-gallery,
+		.view-broadway-gallery
+		{
+			.views-row
+			{	
+				float: none;
+				display: inline-block;
+			}
+		}
+
+	}
+	
+	.field-name-body
+	{
+		padding:0 10px;
+	}
+
+	.field-name-field-grey-body, 
+	.field-name-field-grey-body-night, 
+	.field-name-field-grey-body-broadway
+	{
+		padding:50px 30px;
+	}
+
+	fieldset .field-item
+	{
+		font-size: 24pt;
+	}
+
+	.page-node-6,
+	.page-node-8,
+	.page-node-9
+	{
+		.field-name-body
+		{
+			padding:0px;
+		}
+	}
+	.view-program-schedule-broadway
+	{
+		padding:50px 10px;
+	}
+
+	#block-block-4, 
+	#block-block-6, 
+	#block-block-5, 
+	#block-block-8
+	{
+		padding-top:30px;
+	}
+
+}
+
+@media screen and (min-width:768px)
+{
+
+	#block-block-9 + div.block-menu
+	{
+		display: block!important;
+	}
+}
+
+
+@media screen and (max-width:767px)
+{	
+	.header-inner
+	{
+		border-bottom:1px solid #ccc;
+	}
+
+	.view-footer
+	{
+		right:10px;
+	}
+
+	.view-header
+	{
+		left:10px;
+	}
+
+	#block-block-10, #block-block-12, #block-block-11
+	{
+		top:200px;
+	}
+
+	#block-block-9
+	{
+		display: block;
+		padding: 20px 0px;
+		a
+		{
+			color:black;
+			font-size: 18px;
+		}
+	}
+
+	#block-block-2 
+	{	
+		.content > div
+		{
+			height: 180px;
+			float: none;
+			width: 100%;
+		}
+		
+		.backbg
+		{	
+			background-size: cover;
+			background-position: center;
+		}
+	}
+
+
+	#block-views-summer-banner-slider-block,
+	#block-views-nightingale-banner-slider-block,
+	#block-views-broadway-banner-block 
+	{	
+		img
+		{
+			height: 360px;
+		}
+	}
+
+	#block-views-nightingale-gallery-block,
+	#block-views-summer-gallery-block,
+	#block-views-broadway-gallery-block
+	{
+		.view-header
+		{
+			left:10px;
+		}
+
+		.view-footer
+		{
+			right:10px;
+		}
+
+		.more-link
+		{
+			width:100%;
+		}
+	}
+
+	.fc-header-right,
+	.fc-header-left,
+	.fc-header-center
+	{
+		float: none;
+		display: block;
+	}
+
+	.fullcalendar .fc-day-number
+	{
+		font-size:16px;
+	}
+
+	.fullcalendar .fc-first > div
+	{
+		min-height: auto;
+	}
+
+	.header-inner
+	{
+		padding:0px;
+	}
+
+	#block-block-9 + div.block-menu
+	{
+		display: none;
+
+		ul.menu li
+		{
+			display: block;
+			width:100%;
+
+			a
+			{
+				border-bottom:1px solid #ccc;
+			}
+		}
+
+		.fb
+		{
+			display: block;
+		}
+
+		ul.menu
+		{	
+			background: white;
+			width:100%;
+			border:1px solid #ccc;
+		}
+	}
+
+	#block-menu-menu-top-menu
+	{	
+
+		padding-top:20px;
+		ul.menu a
+		{
+			font-size: 12px;
+			padding:10px 5px;
+
+			&.fb
+			{
+				display: none;
+			}
+		}
+	}
+
+	#block-block-10 p, #block-block-12 p, #block-block-11 p
+	{
+		font-size: 16px;
+	}
+
+	#block-menu-menu-top-menu ~ .block-menu 
+	{	
+		padding:0px;
+
+		.content a.fb
+		{	
+			padding: 0px;
+			top: 0px;
+			background-position:center center;
+		}
+	}
+
+	.field-name-field-grey-body, 
+	.field-name-field-grey-body-night, 
+	.field-name-field-grey-body-broadway,
+	.wrap
+	{	
+		table td
+		{
+			padding: 10px;
+		}
+
+		padding: 50px 10px;
+	}
+
+	.fc-event-title
+	{
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	}
+
+	.field-name-field-image-event,
+	.field-name-field-image-event-night,
+	.field-name-field-image-sch-broadway,
+	.group-section2
+	{
+		float: none;
+
+		img
+		{	
+
+			float: none!important;
+			width: 200px!important;
+			height: auto!important;
+		}
+	}
+
+	.node-full-calendar-summer,
+	.node-full-calendar-nightingale,
+	.node-full-calendar-broadway
+	{	
+		overflow:hidden;
+
+		.field-name-field-image-event,
+		.field-name-field-image-event-night,
+		.field-name-field-image-sch-broadway
+		{	
+			text-align: center;
+			padding: 0px;
+			margin-bottom: 20px;
+			float: none;
+		}
+	}
+}

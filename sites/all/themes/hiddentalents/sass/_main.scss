@@ -1,0 +1,1733 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(../Fonts/ufonts.com_century-gothic.ttf);
+}
+
+
+body
+{
+	font-family:'CenturyGothic',sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	color:#666666;
+}
+
+
+a
+{	
+	color:black;
+	text-decoration:none;
+
+	&:hover
+	{
+		text-decoration: underline;
+	}
+}
+
+p
+{
+	line-height:1.9em;
+	font-size:14px;
+}
+
+ul.menu li
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#page-wrapper
+{
+	background:#f9f9f9;
+}
+
+h2,
+#page-title
+{
+	font-size:30pt;
+	font-weight:100;
+	color:black;
+	padding-bottom:20px;
+}
+
+hr
+{
+	border: 0px;
+	height: 0px;
+	border-top: 1px solid #ccc;
+}
+
+input
+{
+	border: 0px;
+	padding-bottom:10px;
+	border-bottom: 1px solid #ccc;
+	font-size:14px;
+	background:transparent;
+	outline:none;
+}
+
+#block-views-summer-banner-slider-block,
+#block-views-nightingale-banner-slider-block,
+#block-views-broadway-banner-block 
+{	
+	position:relative;
+
+	& + h2
+	{	
+		padding-top:45px;
+
+		&:before
+		{
+			display: block;
+		}
+
+		& + p
+		{
+			padding:30px 0px;	
+		}
+	}
+
+	&:after
+	{	
+	content: "";
+    width: 100%;
+    height: 99%;
+    display: block;
+    box-shadow: 1000px 1000px 20px rgba(0, 0, 0, 0.5) inset;
+    z-index: 9;
+    top: 0;
+    position: absolute;
+}
+}
+
+#block-views-nightingale-banner-slider-block + h2:before 
+{		
+	content: url(../images/nightingale-icon.png);
+}
+
+#block-views-summer-banner-slider-block + h2:before 
+{		
+	content: url(../images/summer-icon.png);
+}
+
+#block-views-broadway-banner-block + h2:before 
+{		
+	content: url(../images/broadway-icon.png);
+}
+.form-actions
+{
+	text-align: center;
+}
+
+.form-submit
+{
+	border-bottom:0px;
+	font-weight:bold;
+	cursor: pointer;
+	&:hover
+	{
+		text-decoration: underline;
+	}
+}
+
+
+textarea
+{
+	border:1px solid #ccc;
+	outline:none;
+}
+
+#block-webform-client-block-2,
+.block-webform 
+{
+	padding-bottom:50px;
+	.webform-component-textfield
+	{
+		float: left;
+		width: 30%;
+		padding-right:30px;
+		margin-bottom: 30px;
+
+		&:last-child
+		{
+			padding-right: 0px;
+		}
+
+		input
+		{
+			width:100%;
+		}
+	}
+
+	.webform-component--email
+	{
+		padding-right: 0px;
+		width: 33.33%;
+	}
+
+	.webform-component-textarea
+	{
+		clear: left;
+
+		textarea
+		{
+			padding:30px;
+			resize:none;
+		}
+	}
+
+	.form-actions
+	{
+		border-top:1px solid #ccc;
+		padding-top:30px;
+		margin-top: 30px;
+	}
+}
+
+.front #content
+{
+	display:none;
+}
+
+.front #footer2
+{
+	strong
+	{
+		color:black;
+	}
+}
+
+
+#content
+{
+	position: relative;
+}
+
+#front,
+#footer2,
+#main-wrapper
+{	
+	background:white;
+	@extend .layout;
+}
+
+#footer2
+{
+	border-bottom:4px solid black;
+	border-top:4px solid black
+}
+
+#block-block-1
+{	
+	text-align:center;
+	padding:70px 0px;
+	max-width:439px;
+	margin: 0 auto;
+
+	img
+	{
+		width: 100%;
+	}
+}
+
+.layout
+{
+	max-width:1100px;
+	margin:0 auto;
+}
+
+.backbg
+{
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#block-block-2 
+{	
+	@extend .layout;
+	overflow:hidden;
+
+	.content > div
+	{	
+		text-align:center;
+		width: 33.333%;
+		float:left;
+		position:relative;
+		height:780px;
+		display: table;
+
+		span
+		{	
+			font-size: 1.8em;
+			font-weight: bold;
+			display: block;
+			position: relative;
+			padding: 50px 0px;
+			width: 100%;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+		
+
+			&:before
+			{
+				display: block;
+				text-align:center;
+				height: 89px;
+				padding-bottom: 5px;
+			}		
+		}
+
+		a
+		{	
+			display: table-cell;
+			vertical-align: middle;
+
+			&:hover
+			{
+				text-decoration: none;
+			}
+			&:hover span
+			{
+				color:white;
+			}
+			&:hover, &:focus, &:active {
+			  color: white;
+			}
+			&:hover .hvr-rectangle-out:after, &:focus .hvr-rectangle-out:after, &:active .hvr-rectangle-out:after {
+			  -webkit-transform: scale(1);
+			  transform: scale(1);
+			}
+		}
+	}
+
+	.backbg
+	{
+		background-position: -220px center;
+	}
+}
+#summer-program-landing
+{
+	background-image:url(../images/summer-program-landing.jpg);
+	border-bottom:4px solid $green;
+
+	span
+	{	
+		color:$green;
+		background: rgba(255,255,255,0.5);
+		transition: background 0.2s;
+		&:before
+		{
+			content: url(../images/summer-icon.png);
+		}
+		
+	}
+
+	.hvr-rectangle-out:after
+	{
+		background:$green;
+
+	}
+
+	&:hover span:before
+	{
+		content: url(../images/summer-white-icon.png);
+	}
+}
+#nightingale-program-landing
+{
+	background-image:url(../images/nightingale.jpg);
+	border-bottom:4px solid $purple;
+
+	span
+	{	
+		color:$purple;
+		background: rgba(255,255,255,0.5);
+		transition: background 0.2s;
+		&:before
+		{
+			content: url(../images/nightingale-icon.png);
+		}
+	}
+
+	.hvr-rectangle-out:after {
+	
+		background:$purple;
+	}
+
+	&:hover span:before
+	{
+		content: url(../images/nightingale-white-icon.png);
+	}
+}
+#Off-broadway-program-landing
+{
+	background-image:url(../images/offbroadway-landing.jpg);
+	border-bottom:4px solid $red;
+
+	span
+	{	
+		color:$red;
+		background: rgba(255,255,255,0.5);
+		transition: background 0.2s;
+		&:before
+		{
+			content: url(../images/broadway-icon.png);
+
+		}
+	}
+
+	.hvr-rectangle-out:after {
+
+		background:$red;
+	}
+
+	&:hover span:before
+	{
+		content: url(../images/broadway-white.png);
+	}
+}
+
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //background: $green;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+#block-block-3
+{	
+	text-align:center;
+	font-size:14px;
+
+	a
+	{
+		font-size: 14px;
+	}
+	
+	h2
+	{	
+		padding:70px 0px 30px;;
+		&:before
+		{
+			content: url(../images/contact-icon.png);
+			display: block;
+			padding-bottom:30px;
+		}
+	}
+	.content
+	{
+		padding: 30px 0px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+
+	img
+	{
+		vertical-align: middle;
+	}
+
+	p
+	{
+		display: inline-block;
+		border-right:1px solid black;
+		padding:0 10px;
+
+		&:last-child
+		{
+			border-right:0px;
+		}
+	}
+}
+
+#footer
+{
+	padding:50px 0px;
+	text-align:center;
+	font-size:12px;
+	color:$grey;
+
+	a
+	{
+		color:$grey;
+	}
+}
+
+#block-webform-client-block-2,
+#block-block-3,
+hr,
+.block-webform 
+{
+	margin:0 auto;
+	max-width:960px;
+}
+
+#block-views-nightingale-banner-slider-block,
+#header
+{
+	@extend .layout;
+	overflow:hidden;
+}
+
+.header-inner
+{
+	padding:0 70px;
+	margin-bottom:30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.front .header-inner
+{
+	border-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#block-block-4,
+#block-block-6,
+#block-block-5,
+#block-block-8,
+#block-menu-menu-top-menu
+{
+	display:inline-block;
+}
+
+
+#block-block-4,
+#block-block-6,
+#block-block-5,
+#block-block-8
+{	
+	max-width: 300px;
+	margin:0 auto;
+	img
+	{
+		width:100%!important;
+		height: auto!important;
+	}
+}
+
+#block-menu-menu-top-menu
+{	
+	width:67%;
+	ul.menu 
+	{	
+		float:right;
+		a
+		{
+			padding:30px;
+			display: block;
+			padding: 10px 15px;
+			color:black;
+			font-weight: bold;
+
+			&:before
+			{
+				display: block;
+				text-align: center;
+				height: 50px;
+			}
+		}
+
+		li
+		{	
+			height: 93px;
+			border-bottom:0px;
+		}
+	}
+
+	#nightingale
+	{	
+		&:after
+		{
+			content: url(../images/night-hover-menu-icon1.png);
+		}
+		&:before
+		{
+			content: url(../images/night-menu-icon-grey.png);
+		}
+
+		&:hover,
+		&.active-trail
+		{
+			border-bottom:3px solid $purple;
+		}
+
+		&:hover:before,
+		&.active:before
+		{
+			content: url(../images/night-hover-menu-icon1.png);
+		}
+	}
+
+	#nightingale,
+	#summer,
+	#broadway
+	{	
+		&:after
+		{
+			position:absolute;
+			top: -1000px;	
+		}
+	}
+
+
+	#broadway
+	{
+		&:before
+		{
+			content: url(../images/off-broadway-grey.png);
+		}
+
+		&:after
+		{
+			content: url(../images/broadway-hover-icon.png);
+		}
+
+		&:hover,
+		&.active-trail
+		{
+			border-bottom:3px solid $red;
+		}
+		
+		&:hover:before,
+		&.active:before
+		{
+			content: url(../images/broadway-hover-icon.png);
+		}
+	}
+	#summer
+	{	
+		&:after
+		{
+			content: url(../images/summer-menu-icon.png);
+		}
+
+		&:before
+		{
+			content: url(../images/summer-grey-icon.png);
+		}
+
+		&:hover,
+		&.active-trail
+		{
+			border-bottom:3px solid $green;
+		}
+		
+		&:hover:before,
+		&.active:before
+		{
+			content: url(../images/summer-menu-icon.png);
+		}
+	}
+}
+
+#header
+{	
+	ul.menu 
+	{	
+		overflow:hidden;
+		li
+		{
+			float: left;
+		}
+	}
+
+	a:hover
+	{
+		text-decoration: none;
+	}
+
+	.fb
+	{
+		background:url(../images/fb-black.png) no-repeat;
+		font-size: 0px;
+		height: 64px;
+		width:30px;
+		color: transparent;
+		background-position: center bottom;
+	}
+}
+
+.page-node-6,
+.page-node-8,
+.page-node-9
+{	
+	#page-title
+	{
+		display:none;	
+	}
+}
+
+#block-menu-menu-top-menu ~ .block-menu
+{
+	padding:20px 0px 0px;
+
+	.content a
+	{
+		color: black;
+		display: block;
+		padding:15px 23px;
+	}
+
+	ul.menu li:first-child a
+	{
+		//padding-left:0px;
+	}
+}
+
+.view-header,
+.view-footer
+{
+	position:absolute;
+	top:50%;
+	z-index:99;
+
+	a
+	{
+		display: block;
+		color:transparent;
+		font-size: 0px;
+		width:50px;
+		height:50px;
+	}
+}
+
+.view-header
+{
+	left:30px;
+	a
+	{
+		background:url(../images/left-arrow.png) no-repeat;
+
+		&:before
+		{	
+			content:"";
+			position:absolute;
+			left:-1000px;
+			background:url(../images/left-arrow-hover.png) no-repeat;
+		}
+
+		&:hover
+		{
+			background:url(../images/left-arrow-hover.png) no-repeat;
+		}
+	}
+}
+
+.view-footer
+{
+	right:30px;
+	a
+	{
+		background:url(../images/right-arrow.png);
+
+		&:before
+		{	
+			content:"";
+			position:absolute;
+			left:-1000px;
+			background:url(../images/right-arrow-hover.png) no-repeat;
+		}
+
+		&:hover
+		{
+			background:url(../images/right-arrow-hover.png) no-repeat;
+		}
+	}
+}
+
+.node-type-off-broadway,
+.page-off-broadway
+{	
+
+	.wrap
+	{
+		@include grey-region-border($red);
+	}
+
+	.footer-fb
+	{
+			&:before{
+			content: url(../images/fb-red.png);
+		}
+	}
+
+	#page-title:before {
+	content: url(../images/broadway-icon.png);
+	display: block;
+	}
+
+	.group-section1
+	{
+		&:before
+		{
+			content:url("../images/star-red.png");
+			text-align: center;
+			display: block;
+		}
+	}
+
+	#footer2
+	{
+		border-color:$red;
+	}
+
+	#block-block-3 h2:before
+	{
+		content: url(../images/contact-red.png);
+	}
+
+	a.active
+	{
+		border-bottom:3px solid $red;
+	}
+
+	.form-submit,a,strong
+	{
+		color:$red;
+	}
+}
+
+.node-full-calendar-summer,
+.node-full-calendar-nightingale,
+.node-full-calendar-broadway
+{	
+	overflow:hidden;
+
+	.field-name-body
+	{
+		padding-bottom:0px;
+	}
+
+	.field-name-field-image-event,
+	.field-name-field-image-event-night,
+	.field-name-field-image-sch-broadway
+	{
+		float: left;
+		padding:30px;
+		margin-bottom: 100px;
+	}
+
+	.field
+	{
+		padding-top:10px;
+	}
+
+	.field-name-body
+	{
+	
+		overflow:visible;
+	}
+}
+
+.fullcalendar
+{
+	.ui-widget-content > div
+	{
+		min-height: auto!important;
+	}
+}
+
+.node-type-summer-program,
+.page-summer-program
+{	
+	.wrap
+	{
+		@include grey-region-border($green);
+	}
+
+	#page-title:before {
+	content: url(../images/summer-icon.png);
+	display: block;
+	}
+
+	.group-section1
+	{
+		&:before
+		{
+			content:url("../images/star.png");
+		}
+	}
+
+	.footer-fb
+	{
+			&:before{
+			content: url(../images/fb-green.png);
+		}
+	}
+
+	#footer2
+	{
+		border-color:$green;
+	}
+
+	#block-block-3 h2:before
+	{
+		content: url(../images/contact-green.png);
+	}
+
+	a.active
+	{
+		border-bottom:3px solid $green;
+	}
+
+	.form-submit,
+	a,
+	strong
+	{
+		color:$green;
+	}
+}
+
+.node-type-summer-program,
+.node-type-nightingale,
+.node-type-off-broadway
+{
+	.about-text,
+	.about-text p
+	{
+		padding:30px 0px;
+
+		& + p a
+		{
+			font-weight: bold;
+		}
+	}
+
+}
+
+.footer-fb
+{	
+	font-size: 0px;
+	color:transparent;
+
+	&:before
+	{	
+		content: url(../images/fb.png);
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+
+
+.node-type-nightingale,
+.page-nightingale
+{	
+	.group-section1
+	{
+		&:before
+		{
+			content:url("../images/star-blue.png");
+		}
+	}
+
+	.footer-fb
+	{
+			&:before{
+			content: url(../images/fb-purple.png);
+		}
+	}
+
+	.wrap
+	{
+		@include grey-region-border($purple);
+	}
+
+	#footer2
+	{
+		border-color:$purple;
+	}
+
+	#block-block-3 h2:before
+	{
+		content: url(../images/contact-purple.png);
+	}
+
+	a.active
+	{
+		border-bottom:3px solid $purple;
+	}
+
+	.form-submit,a,strong
+	{
+		color:$purple;
+	}
+
+}
+
+
+.view-nightingale-gallery,
+.view-summer-gallery,
+.view-broadway-gallery
+{
+	max-width: 824px;
+	margin: 0 auto;
+}
+
+#block-views-nightingale-gallery-block,
+#block-views-summer-gallery-block,
+#block-views-broadway-gallery-block
+{	
+	text-align:center;
+	background:#ebebeb;
+	padding: 50px 0px;
+	margin-top:60px;
+	position:relative;
+
+	.views-field-field-year,
+	.views-field-title
+	{
+		display: none;
+	}
+
+	.more-link
+	{
+		text-align: center;
+		bottom: 40px;
+		position: absolute;
+		margin: 0 auto;
+		width: 830px;
+		font-weight:bold;
+
+		a
+		{
+			color: black;
+		}
+	}
+
+	.content
+	{
+		max-width: 960px;
+		margin: 40px auto;
+		padding:30px 0px;
+		border-top:1px solid #cccccc;
+		border-bottom:1px solid #cccccc;
+	}
+
+	.view-header,
+	.view-footer
+	{	
+
+		margin-top: 50px;
+	}
+}
+
+
+#block-views-broadway-gallery-block
+{
+	@include grey-region-border($red);
+
+	.view-header
+	{	
+		left:50px;
+		a
+		{
+			background:url(../images/left-arrow-dark.png) no-repeat;
+
+			&:before
+			{
+				content: "";
+				background:url(../images/left-arrow-red.png) no-repeat;
+			}
+
+			&:hover
+			{
+				background:url(../images/left-arrow-red.png) no-repeat;
+			}
+		}
+	}
+
+	.view-footer
+	{	
+		right:50px;
+		a
+		{
+			background:url(../images/right-arrow-dark.png);
+			&:before
+			{
+				content: "";
+				background:url(../images/right-arrow-red.png) no-repeat;
+			}
+
+			&:hover
+			{
+				background:url(../images/right-arrow-red.png) no-repeat;
+			}
+		}
+	}
+
+	h2:before
+	{	
+		content: url(../images/broadway-gallery-icon.png);
+		display: block;
+	}
+
+}
+
+.view-program-schedule-summer
+{
+	background:#ccc;
+	padding:50px 0px;
+
+	@include grey-region-border($green);
+
+	.fullcalendar
+	{
+		.ui-widget-header
+		{
+			background:$green;
+		}
+
+		.fc-event-skin,
+		.fc-event-time
+		{
+			background-color:$green;
+			border-color:$green;
+		}
+	}
+}
+
+.view-program-schedule-nightingale
+{	
+	background:#ccc;
+	padding:50px 0px;
+
+	@include grey-region-border($purple);
+	.fullcalendar
+	{
+		.ui-widget-header
+		{
+			background:$purple;
+			color:white;
+		}
+
+	
+
+		.fc-event-skin,
+		.fc-event-time
+		{
+			background-color:$purple;
+			border-color:$purple;
+		}
+	}
+}
+
+.view-program-schedule-broadway
+{	
+	background:#ccc;
+	padding:50px 0px;
+
+	@include grey-region-border($red);
+
+	.fullcalendar
+	{
+		.ui-widget-header
+		{
+			background:$red;
+			color:white;
+		}
+
+		.fc-event-skin,
+		.fc-event-time
+		{
+			background-color:$red;
+			border-color:$red;
+		}
+	}
+}
+
+.fullcalendar
+{		
+	max-width:980px;
+	margin:0 auto;
+
+	.ui-widget-header
+	{
+		padding:20px 0px;
+	}
+
+	.fc-day-number
+	{
+		float: none;
+		text-align: center;
+		font-size: 30pt;
+		padding-top:20px;
+		color:#666666;
+	}
+	.fc td
+	{
+		vertical-align: middle;
+	}
+}
+
+#page-title
+{
+	text-align: center;
+	padding:40px 0px;
+}
+
+.page-summer-program-photo-gallery,
+.page-nightingale-photo-gallery,
+.page-off-broadway-photo-gallery
+{	
+	#page-title:before
+	{
+		content: url(../images/gallery-page.png);
+		display: block;
+	}
+
+
+	.view-summer-gallery,
+	.view-nightingale-gallery,
+	.view-broadway-gallery
+	{	
+
+
+		overflow:hidden;	
+		background:#ccc;
+		padding:50px 0px;
+		max-width:100%;
+		text-align:center;
+		@include grey-region-border($green);
+
+		.views-field-title
+		{
+			color:black;
+		}
+
+		.views-row
+		{	
+			float: left;
+			padding:20px;
+		}
+
+		.more-link
+		{
+			display: none;
+		}
+
+		.view-content
+		{
+			max-width: 920px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+	}
+	
+	.view-header,
+	.view-footer
+	{
+		display: none;
+	}
+}
+
+.page-nightingale-photo-gallery
+{	
+	#page-title:before
+	{
+		content: url(../images/nightingale-gallery-icon.png);
+		display: block;
+	}
+
+	.view-nightingale-gallery
+	{
+		@include grey-region-border($purple);
+	}
+}
+
+.page-off-broadway-photo-gallery
+{	
+	#page-title:before
+	{
+		content: url(../images/broadway-gallery.png);
+		display: block;
+	}
+
+	.view-broadway-gallery
+	{
+		@include grey-region-border($red);
+	}
+}
+
+#block-views-summer-gallery-block
+{
+	@include grey-region-border($green);
+
+	.view-header
+	{	
+		left:50px;
+		a
+		{
+			background:url(../images/left-arrow-dark.png) no-repeat;
+
+			&:before
+			{
+				content: "";
+				background:url(../images/left-arrow-green.png) no-repeat;
+			}
+
+			&:hover
+			{
+				background:url(../images/left-arrow-green.png) no-repeat;
+			}
+		}
+	}
+
+	.view-footer
+	{	
+		right:50px;
+		a
+		{
+			background:url(../images/right-arrow-dark.png);
+			&:before
+			{
+				content: "";
+				background:url(../images/right-arrow-green.png) no-repeat;
+			}
+
+			&:hover
+			{
+				background:url(../images/right-arrow-green.png) no-repeat;
+			}
+		}
+	}
+
+	h2:before
+	{	
+		content: url(../images/gallery-icon-green.png);
+		display: block;
+	}
+
+}
+
+#block-views-nightingale-gallery-block
+{	
+	@include grey-region-border($purple);
+
+	.view-header
+	{	
+		left:50px;
+		a
+		{
+			background:url(../images/left-arrow-dark.png) no-repeat;
+
+			&:before
+			{
+				content: "";
+				background:url(../images/left-arrow-blue.png) no-repeat;
+			}
+
+			&:hover
+			{
+				background:url(../images/left-arrow-blue.png) no-repeat;
+			}
+		}
+	}
+
+	.view-footer
+	{	
+		right:50px;
+		a
+		{
+			background:url(../images/right-arrow-dark.png);
+
+			&:before
+			{
+				content: "";
+				background:url(../images/right-arrow-blue.png) no-repeat;
+			}
+
+			&:hover
+			{
+				background:url(../images/right-arrow-blue.png) no-repeat;
+			}
+		}
+	}
+
+	h2:before
+	{	
+		content: url(../images/gallery-icon-purple.png);
+		display: block;
+	}
+
+}
+
+.field-name-field-grey-body,
+.field-name-field-grey-body-night,
+.field-name-field-grey-body-broadway,
+.wrap
+{
+	background:#ebebeb;
+	padding:50px 30px;
+}
+
+.field-name-field-grey-body
+{
+	@include grey-region-border($green);
+}
+
+.field-name-field-grey-body-night
+{
+	@include grey-region-border($purple);
+}
+
+.field-name-field-grey-body-broadway
+{
+	@include grey-region-border($red);
+}
+
+.field-name-body,
+.field-name-field-grey-body,
+.field-name-field-grey-body-night,
+.field-name-field-grey-body-broadway,
+fieldset
+{	
+	overflow:hidden;
+
+	ul
+	{
+		margin-left: 30px;
+		padding: 20px 0px;
+
+		li
+		{
+			font-size: 14px;
+			line-height: 1.9em;
+		}
+	}
+
+
+	.field-item
+	{
+		max-width: 822px;
+		margin: 0 auto;
+	}	
+
+	strong
+	{
+		color:black;
+	}
+
+	table
+	{
+		width: 100%;
+		text-align: center;
+		background:white;
+
+		td
+		{
+			padding:20px;
+			border-right:1px solid #ccc;
+		}
+
+		tr
+		{
+			border-bottom:1px solid #ccc;
+
+			td:last-child
+			{
+				border-right:0px;
+			}
+		}
+
+		caption
+		{
+			padding: 20px;
+			font-size: 18px;
+			color: black;
+			background-color: $green;
+		}
+	}
+}
+
+.field-name-body
+{
+	padding-bottom:50px;
+}
+
+.field-name-field-grey-body-night
+{
+	table caption
+	{
+		background-color: $purple;
+		color:white;
+	}
+
+	strong
+	{
+		color:white;
+	}
+}
+
+.field-name-field-grey-body-broadway
+{
+	table caption
+	{
+		background-color: $red;
+		color:white;
+	}
+
+	strong
+	{
+		color:white;
+	}
+}
+
+
+.node-type-nightingale 
+{
+	#page-title:before
+	{
+		content: url(../images/nightingale-icon.png);
+		display: block;
+	}
+}
+.node-type-summer-program 
+{
+	#page-title:before
+	{	
+		content: url(../images/summer-icon.png);
+		display: block;
+	}
+}
+
+.page-node-33
+{
+	.field-name-body
+	{	
+		h2:before
+		{
+			content: url(../images/broadway-icon.png);
+			display: block;
+		}
+	}
+}
+
+.page-node-8,
+.page-node-9,
+.page-node-6 #node-6
+{
+	.field-item
+	{
+		max-width: 100%;
+		margin: 0 auto;
+	}	
+
+	.field-name-body
+	{
+		padding-bottom: 0px;
+	}
+}
+
+.page-node-29
+{
+	#page-title:before
+	{	
+		content: url(../images/registration-icon.png);
+		display: block;
+	}
+}
+
+.page-node-32
+{
+	#page-title:before
+	{	
+		content: url(../images/registration-icon-blue.png);
+		display: block;
+	}
+}
+
+.page-node-35
+{
+	#page-title:before
+	{	
+		content: url(../images/registration-red.png);
+		display: block;
+	}
+}
+
+.page-nightingale-program-schedule-nightingale #page-title:before
+{	
+	content: url(../images/schedule-blue.png);
+	display: block;
+}
+
+.page-summer-program-program-schedule-summer #page-title:before
+{
+	content: url(../images/schedule-icon.png);
+	display: block;
+}
+
+.page-off-broadway-program-schedule-broadway #page-title:before
+{
+	content: url(../images/schedule-red.png);
+	display: block;
+}
+
+.group-section1
+{
+	&:before
+	{
+		content:url("../images/star-red.png");
+		text-align: center;
+		display: block;
+		padding-bottom:20px;
+	}
+}
+
+.grey-title .fieldset-wrapper
+{
+	text-align:center;
+
+	&>a
+	{	
+		font-size: 30pt;
+		color: black;
+		display: inline-block;
+		padding-left: 10px;
+
+		&:first-child
+		{
+			border-right:2px solid black;
+			padding-right:10px;
+		}
+
+		&.active
+		{
+			border-bottom:0px;
+		}
+
+		&:hover
+		{
+			text-decoration: none;
+		}
+	}
+
+	.active > div
+	{
+		border-bottom:2px solid black;
+	}
+}
+
+legend
+{
+	display:none;
+}
+
+fieldset
+{
+	border:0px;
+}
+
+#block-block-9
+{
+	display:none;
+	text-align:center;
+	cursor:pointer;
+
+	& + div.block-menu
+	{
+		.fb{
+			display: none;
+		}
+	}
+}
+
+.front #footer2
+{
+	border-top:0px;
+}
+
+.placeholder
+{
+	font-size:14px;
+	color:#666;
+}
+
+input::-webkit-input-placeholder {
+   color:#666;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   color:#666; 
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color:#666;
+}
+
+input:-ms-input-placeholder {  
+ 	color:#666;
+}
+
+#block-block-10,
+#block-block-12,
+#block-block-11
+{
+	position: absolute;
+	top: 280px;
+	z-index: 99;
+	left: 50%;
+	@include transform(translateX(-50%) translateY(-50%));
+
+	p
+	{
+		font-size: 24px;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+		color: white;
+	}
+}
+
+#block-block-13
+{
+	display: none;
+	width:500px;
+	left:50%;
+	top:50%;
+	position: fixed;
+	background: white;
+	text-align: center;
+	padding: 20px 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	z-index: 9999;
+	@include transform(translateX(-50%) translateY(-50%));
+}
+
+#error
+{
+	text-align: center;
+	color: red;
+	padding-bottom:20px;
+}

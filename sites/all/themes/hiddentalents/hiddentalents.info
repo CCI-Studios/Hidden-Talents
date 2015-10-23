@@ -1,0 +1,28 @@
+name = hiddentalents
+description = hiddentalents Custom
+core = 7.x
+
+scripts[] = js/banner-slider.js
+scripts[] = js/tab.js
+scripts[] = js/flip-card.js
+scripts[] = js/form-validation.js
+scripts[] = js/mobile-menu.js
+scripts[] = js/placeholder.js
+scripts[] = swipebox-master/js/jquery.swipebox.min.js
+
+stylesheets[all][] = css/screen.css
+stylesheets[all][] = swipebox-master/css/swipebox.min.css
+	
+regions[navigation] = Navigation
+regions[header] = Header
+regions[help] = Help
+regions[front] = Front region
+regions[content] = Content
+regions[banner] = Banner
+regions[grey-region] = Grey region
+regions[sidebar] = Sidebar
+regions[widgets] = Widgets
+regions[footer2] = Footer2
+regions[footer] = Footer
+
+

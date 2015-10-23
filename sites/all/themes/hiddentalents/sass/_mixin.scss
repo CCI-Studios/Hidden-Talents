@@ -1,0 +1,14 @@
+@mixin grey-region-border($color)
+{
+	border-top: 4px solid $color;
+}
+
+
+@mixin transform($translate) 
+{
+  -webkit-transform: $translate;
+  -moz-transform: $translate;
+  -ms-transform: $translate;
+  transform:$translate;
+}
+
